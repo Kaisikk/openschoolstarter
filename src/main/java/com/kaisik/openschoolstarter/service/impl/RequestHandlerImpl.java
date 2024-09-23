@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import java.io.BufferedReader;
 import java.time.Instant;
 
-@Service
 @Slf4j
 public class RequestHandlerImpl implements RequestHandler {
 
