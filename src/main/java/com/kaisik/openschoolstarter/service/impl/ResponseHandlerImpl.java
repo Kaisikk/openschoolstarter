@@ -13,7 +13,7 @@ public class ResponseHandlerImpl implements ResponseHandler {
 
         if (needLogTime) {
             Long startTime = (Long) request.getAttribute("startTime");
-            long executeTime = System.currentTimeMillis() - startTime;
+            Long executeTime = System.currentTimeMillis() - startTime;
             log.info("Запрос: метод запроса - {}, url запроса - {}, время ответа - {}", request.getMethod(), request.getRequestURI(), executeTime);
         } else {
             log.info("Запрос: метод запроса - {}, url запроса - {}, время ответа - {}", request.getMethod(), request.getRequestURI());

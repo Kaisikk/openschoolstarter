@@ -91,7 +91,6 @@ public class HttpRequestHandler implements HandlerInterceptor {
             handleException(response, ex);
             return;
         }
-        HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
         responseHandler.handleResponse(request, response, Boolean.TRUE.equals(logResponseTime));
     }
 

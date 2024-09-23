@@ -16,7 +16,7 @@ public class RequestHandlerImpl implements RequestHandler {
                               boolean needLogRequestType, boolean needLogHeaders, boolean needLogBody) {
 
         if (needLogTime) {
-            Instant startTime = Instant.now();
+            Long startTime = System.currentTimeMillis();
             request.setAttribute("startTime", startTime);
         }
 
